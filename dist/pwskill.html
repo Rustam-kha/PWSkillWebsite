@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PWSkills - Responsive Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-900 text-gray-200 font-sans">
+    <!-- Navbar -->
+    <nav
+      class="sticky top-0 z-50 bg-gradient-to-r from-indigo-600 to-purple-600 shadow-lg">
+      <div
+        class="container mx-auto flex items-center justify-between px-6 py-4">
+        <a href="#" class="text-3xl font-bold text-white">PWSkills</a>
+        <ul class="hidden md:flex space-x-6 font-semibold">
+          <li><a href="#"
+              class="hover:text-yellow-300 transition menu-item">Home</a></li>
+          <li><a href="#"
+              class="hover:text-yellow-300 transition menu-item">About</a></li>
+          <li><a href="#"
+              class="hover:text-yellow-300 transition menu-item">Contact</a></li>
+        </ul>
+        <button
+          class="hidden md:inline-block bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded shadow">
+          Login/Sign Up
+        </button>
+        <!-- Mobile Menu Toggle -->
+        <button id="menuToggle"
+          class="md:hidden text-3xl text-white">&#9776;</button>
+      </div>
+      <!-- Mobile Menu -->
+      <div id="mobileMenu" class="hidden md:hidden bg-indigo-700">
+        <ul class="flex flex-col items-center space-y-4 py-4 font-semibold">
+          <li><a href="#"
+              class="hover:text-yellow-300 transition menu-item">Home</a></li>
+          <li><a href="#"
+              class="hover:text-yellow-300 transition menu-item">About</a></li>
+          <li><a href="#"
+              class="hover:text-yellow-300 transition menu-item">Contact</a></li>
+          <li>
+            <button
+              class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded shadow">
+              Login/Sign Up
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Welcome Section -->
+    <header class="relative">
+      <img class="w-full h-[60vh] object-cover md:h-[80vh]"
+        src="https://my-pwskills.netlify.app/assets/image/banner1.jpg"
+        alt="Banner">
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black flex items-center justify-center">
+        <div class="text-center text-white px-4">
+          <h1 class="text-4xl md:text-6xl font-extrabold mb-4 animate-pulse">
+            Welcome to <span
+              class="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">PWSkills</span>
+          </h1>
+          <p class="text-xl md:text-2xl font-light shadow-md">Empowering
+            Learning Through Pure Hardwork</p>
+          <a href="#"
+            class="mt-6 inline-block px-8 py-3 bg-yellow-400 text-gray-900 font-bold rounded hover:bg-yellow-500 shadow-lg transition">
+            Get Started
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Highlights Section -->
+    <section class="container mx-auto text-center py-16 px-4">
+      <h2
+        class="text-4xl font-bold text-indigo-400">"Pure Hardwork, No Shortcuts!"</h2>
+      <div class="mx-auto mt-4 mb-12 w-16 h-1 bg-yellow-400 rounded"></div>
+      <div class="grid gap-10 md:grid-cols-3">
+        <div class="flex flex-col items-center">
+          <img class="w-24 h-24"
+            src="https://s3.ap-south-1.amazonaws.com/cdn.pwskills.com/assets/uploads/categoryIcon/7362227c-33fe-4113-955f-d616e8e87a04.svg"
+            alt="Courses">
+          <p class="text-3xl font-bold text-yellow-400 mt-4">600+</p>
+          <p class="text-xl text-gray-300">Different Courses</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <img class="w-24 h-24"
+            src="https://s3.ap-south-1.amazonaws.com/cdn.pwskills.com/assets/uploads/categoryIcon/e6cac10c-85fd-4315-9def-48aa3094a3e9.svg"
+            alt="Students">
+          <p class="text-3xl font-bold text-yellow-400 mt-4">7000+</p>
+          <p class="text-xl text-gray-300">Enrolled Students</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <img class="w-24 h-24"
+            src="https://s3.ap-south-1.amazonaws.com/cdn.pwskills.com/assets/uploads/categoryIcon/7cf6e398-9b29-40d6-a0f8-dad29ccd13e1.svg"
+            alt="Transactions">
+          <p class="text-3xl font-bold text-yellow-400 mt-4">10000+</p>
+          <p class="text-xl text-gray-300">Successful Transactions</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="container mx-auto text-center py-16 px-4">
+      <h2 class="text-4xl font-bold text-indigo-400">Our Products</h2>
+      <div class="mx-auto mt-4 mb-12 w-16 h-1 bg-yellow-400 rounded"></div>
+      <div class="grid gap-10 md:grid-cols-3">
+        <div class="bg-gray-800 rounded-lg shadow-lg p-6">
+          <img class="mx-auto mb-4 w-28 h-24"
+            src="https://s3.ap-south-1.amazonaws.com/cdn.pwskills.com/assets/uploads/categoryIcon/42cf657e-da8b-4c07-b02b-22164a31b904.png"
+            alt="PW Skill Lab">
+          <h3 class="text-2xl font-bold text-yellow-400">PW Skill Lab</h3>
+          <p class="text-gray-300 mt-4">Supercharge your project development
+            with our robust lab.</p>
+        </div>
+        <div class="bg-gray-800 rounded-lg shadow-lg p-6">
+          <img class="mx-auto mb-4 w-28 h-24"
+            src="https://s3.ap-south-1.amazonaws.com/cdn.pwskills.com/assets/uploads/course-thumbnail/fcc4a750-d5a9-4b82-89b5-7dcfbf1e6c29.svg"
+            alt="UI UX Design">
+          <h3 class="text-2xl font-bold text-yellow-400">UI UX Design
+            Course</h3>
+          <p class="text-gray-300 mt-4">Become a certified UI/UX designer with
+            the PW Skills UI UX Design Course.</p>
+        </div>
+        <div class="bg-gray-800 rounded-lg shadow-lg p-6">
+          <img class="mx-auto mb-4 w-28 h-24"
+            src="https://s3.ap-south-1.amazonaws.com/cdn.pwskills.com/assets/uploads/categoryIcon/bc14c559-783f-4f78-b7a7-7a638810c7da.svg"
+            alt="Data Science">
+          <h3 class="text-2xl font-bold text-yellow-400">Data Science &
+            Analytics</h3>
+          <p class="text-gray-300 mt-4">Shape your career in Data Science and AI
+            with our curated courses.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12 px-4">
+      <div class="container mx-auto grid gap-8 md:grid-cols-4">
+        <div>
+          <img class="w-40"
+            src="https://tse1.mm.bing.net/th?id=OIP.kDNHkvsOHwMMwnwTqfSodQHaCw&pid=Api&P=0&h=220"
+            alt="Logo">
+          <p class="mt-4">Email us: <a
+              href="mailto:uettaxilarmkhan2454@gmail.com"
+              class="text-yellow-400">uettaxilarmkhan2454@gmail.com</a></p>
+        </div>
+        <div>
+          <h3 class="font-bold text-white">PWSkills</h3>
+          <ul class="mt-4 space-y-2">
+            <li><a href="#" class="hover:text-yellow-400">About Us</a></li>
+            <li><a href="#" class="hover:text-yellow-400">FAQs</a></li>
+            <li><a href="#" class="hover:text-yellow-400">Privacy
+                Policy</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="font-bold text-white">Products</h3>
+          <ul class="mt-4 space-y-2">
+            <li><a href="#" class="hover:text-yellow-400">Job Portals</a></li>
+            <li><a href="#" class="hover:text-yellow-400">Experiance
+                Portal</a></li>
+            <li><a href="#" class="hover:text-yellow-400">Hall of fame</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="font-bold text-white">Links</h3>
+          <ul class="mt-4 space-y-2">
+            <li><a href="#" class="hover:text-yellow-400">Rustam Tech
+                Realm</a></li>
+            <li><a href="#" class="hover:text-yellow-400">PW Youtube
+              </a></li>
+            <li><a href="#" class="hover:text-yellow-400">Careers</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript for Menu -->
+    <script>
+      const menuToggle = document.getElementById('menuToggle');
+      const mobileMenu = document.getElementById('mobileMenu');
+      const menuItems = document.querySelectorAll('.menu-item');
+
+      // Toggle menu on button click
+      menuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+
+      // Close menu when a menu item is clicked
+      menuItems.forEach(item => {
+        item.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+        });
+      });
+    </script>
+  </body>
+</html>
